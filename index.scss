@@ -1,0 +1,116 @@
+@function px2rem($px){
+  $rem:41.4px;
+  @return ($px / $rem) + rem;
+}
+
+body {
+  width: 100%;
+  background-color: #F7FCFF;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.bg-top{
+  width: 100%;
+  .bg{
+    width: 100%;
+    height: px2rem(226px);
+  }
+}
+
+.titre-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: px2rem(123px);
+  transform: translateY(- px2rem(60px));
+  .titre{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 900;
+    font-size: px2rem(36px);
+    line-height: px2rem(44px);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    width: px2rem(274px);
+    height: px2rem(123px);
+  }
+}
+
+.des-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: px2rem(123px);
+  .des{
+    width: px2rem(414px);
+    height: px2rem(100px);
+    padding: 0 px2rem(20px);
+    font-family: Calibri;
+    font-style: normal;
+    font-weight: normal;
+    font-size: px2rem(24px);
+    line-height: px2rem(29px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    transform: translateY(- px2rem(62px));
+  }
+}
+
+
+
+.btn-layout{
+  width: 100%;
+  position: absolute;
+  bottom: px2rem(34px);
+  left: 0;
+  a{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    .btn-wrapper{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      width: px2rem(254px);
+      height: px2rem(77px);
+      background: #00BFA6;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+      border-radius: 44px;
+      .btn-text{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 900;
+        font-size: px2rem(20px);
+        line-height: px2rem(24px);
+        color: #FFFFFF;
+        text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}
+
+
+
+
